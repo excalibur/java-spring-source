@@ -1,0 +1,30 @@
+<ul id="gn-menu" class="gn-menu-main">
+        <li class="gn-trigger">
+          <a class="gn-icon gn-icon-menu"><span>目录</span></a>
+          <nav class="gn-menu-wrapper">
+            <div class="gn-scroller">
+              <ul class="gn-menu">
+                <li class="gn-search-item">
+                  <input placeholder="搜索" type="search" class="gn-search">
+                  <a class="gn-icon"><i class="fa fa-search"></i></a>
+                </li>
+                 {% for weight in (0..20) %}
+                  {% for p in site.pages %}
+                    {% if p.weight == weight %}
+                     <li>
+                        <a href="{{ site.url }}{{ p.url }}" class="gn-icon"><i>{{ p.num }}</i> <span>{{ p.contents }}</span></a>
+                      </li>
+                        
+                    {% endif %}
+                   {% endfor %}
+                 {% endfor %}
+               
+              </ul>
+            </div><!-- /gn-scroller -->
+          </nav>
+        </li>
+        <li><a href="{{ site.url }}">{{ site.title }}</a></li>
+    
+        <li><a class="" href="{{ site.owner.github }}" target="_blank"><i class="fa fa-github fa-2x"></i> GitHub</a></li>
+
+      </ul>

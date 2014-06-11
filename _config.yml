@@ -1,0 +1,13 @@
+# Site settings
+title: 深入Spring FrameWork 源码参考教程
+email: lzy7750015@gmail.com
+description: "Thorough Spring FrameWork Reference Guide"
+baseurl: ""
+url: "http://leeln.com/java-spring-source"
+# url: "http://localhost:4000"
+# Build settings
+markdown: kramdown
+permalink: pretty
+owner:
+  name:           欧阳澄泓
+  github:         https://github.com/excalibur/java-spring-source
